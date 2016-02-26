@@ -24,19 +24,10 @@ test: generate
 testrace: generate
 	go list $(TEST) | xargs -n1 go test -race $(TESTARGS)
 
-# updatedeps installs all the dependencies Consul Template needs to run and
-# build
-updatedeps:
-	go get -u github.com/mitchellh/gox
-	go list ./... \
-		| xargs go list -f '{{ join .Deps "\n" }}{{ printf "\n" }}{{ join .TestImports "\n" }}' \
-		| grep -v github.com/hashicorp/$(NAME) \
-		| xargs go get -f -u -v
-
 # generate runs `go generate` to build the dynamically generated
 # source files.
 generate:
 	find . -type f -name '.DS_Store' -delete
 	go generate ./...
 
-.PHONY: default bin dev dist test testrace updatedeps generate
+.PHONY: default bin dev dist test testrace generate
