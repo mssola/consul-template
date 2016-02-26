@@ -1,0 +1,335 @@
+
+state 0
+	$accept: .top $end 
+
+	LEFTBRACE  shift 3
+	.  error
+
+	object  goto 2
+	top  goto 1
+
+state 1
+	$accept:  top.$end 
+
+	$end  accept
+	.  error
+
+
+state 2
+	top:  object.    (1)
+
+	.  reduce 1 (src line 37)
+
+
+state 3
+	object:  LEFTBRACE.members RIGHTBRACE 
+	object:  LEFTBRACE.RIGHTBRACE 
+
+	STRING  shift 7
+	RIGHTBRACE  shift 5
+	.  error
+
+	pair  goto 6
+	members  goto 4
+
+state 4
+	object:  LEFTBRACE members.RIGHTBRACE 
+	members:  members.COMMA pair 
+
+	COMMA  shift 9
+	RIGHTBRACE  shift 8
+	.  error
+
+
+state 5
+	object:  LEFTBRACE RIGHTBRACE.    (3)
+
+	.  reduce 3 (src line 51)
+
+
+state 6
+	members:  pair.    (4)
+
+	.  reduce 4 (src line 56)
+
+
+state 7
+	pair:  STRING.COLON value 
+
+	COLON  shift 10
+	.  error
+
+
+state 8
+	object:  LEFTBRACE members RIGHTBRACE.    (2)
+
+	.  reduce 2 (src line 43)
+
+
+state 9
+	members:  members COMMA.pair 
+
+	STRING  shift 7
+	.  error
+
+	pair  goto 11
+
+state 10
+	pair:  STRING COLON.value 
+
+	FLOAT  shift 25
+	NUMBER  shift 24
+	STRING  shift 13
+	LEFTBRACE  shift 3
+	LEFTBRACKET  shift 22
+	TRUE  shift 17
+	FALSE  shift 18
+	NULL  shift 19
+	MINUS  shift 23
+	.  error
+
+	float  goto 21
+	int  goto 20
+	number  goto 14
+	object  goto 15
+	value  goto 12
+	array  goto 16
+
+state 11
+	members:  members COMMA pair.    (5)
+
+	.  reduce 5 (src line 61)
+
+
+state 12
+	pair:  STRING COLON value.    (6)
+
+	.  reduce 6 (src line 66)
+
+
+state 13
+	value:  STRING.    (7)
+
+	.  reduce 7 (src line 73)
+
+
+state 14
+	value:  number.    (8)
+
+	.  reduce 8 (src line 81)
+
+
+state 15
+	value:  object.    (9)
+
+	.  reduce 9 (src line 85)
+
+
+state 16
+	value:  array.    (10)
+
+	.  reduce 10 (src line 89)
+
+
+state 17
+	value:  TRUE.    (11)
+
+	.  reduce 11 (src line 96)
+
+
+state 18
+	value:  FALSE.    (12)
+
+	.  reduce 12 (src line 103)
+
+
+state 19
+	value:  NULL.    (13)
+
+	.  reduce 13 (src line 110)
+
+
+state 20
+	number:  int.    (18)
+	number:  int.exp 
+
+	EPLUS  shift 27
+	EMINUS  shift 28
+	.  reduce 18 (src line 138)
+
+	exp  goto 26
+
+state 21
+	number:  float.    (19)
+	number:  float.exp 
+
+	EPLUS  shift 27
+	EMINUS  shift 28
+	.  reduce 19 (src line 146)
+
+	exp  goto 29
+
+state 22
+	array:  LEFTBRACKET.RIGHTBRACKET 
+	array:  LEFTBRACKET.elements RIGHTBRACKET 
+
+	FLOAT  shift 25
+	NUMBER  shift 24
+	STRING  shift 13
+	LEFTBRACE  shift 3
+	LEFTBRACKET  shift 22
+	RIGHTBRACKET  shift 30
+	TRUE  shift 17
+	FALSE  shift 18
+	NULL  shift 19
+	MINUS  shift 23
+	.  error
+
+	float  goto 21
+	int  goto 20
+	number  goto 14
+	object  goto 15
+	value  goto 32
+	array  goto 16
+	elements  goto 31
+
+state 23
+	int:  MINUS.int 
+	float:  MINUS.float 
+
+	FLOAT  shift 25
+	NUMBER  shift 24
+	MINUS  shift 23
+	.  error
+
+	float  goto 34
+	int  goto 33
+
+state 24
+	int:  NUMBER.    (23)
+
+	.  reduce 23 (src line 185)
+
+
+state 25
+	float:  FLOAT.    (25)
+
+	.  reduce 25 (src line 195)
+
+
+state 26
+	number:  int exp.    (20)
+
+	.  reduce 20 (src line 153)
+
+
+state 27
+	exp:  EPLUS.NUMBER 
+
+	NUMBER  shift 35
+	.  error
+
+
+state 28
+	exp:  EMINUS.NUMBER 
+
+	NUMBER  shift 36
+	.  error
+
+
+state 29
+	number:  float exp.    (21)
+
+	.  reduce 21 (src line 166)
+
+
+state 30
+	array:  LEFTBRACKET RIGHTBRACKET.    (14)
+
+	.  reduce 14 (src line 118)
+
+
+state 31
+	array:  LEFTBRACKET elements.RIGHTBRACKET 
+	elements:  elements.COMMA value 
+
+	COMMA  shift 38
+	RIGHTBRACKET  shift 37
+	.  error
+
+
+state 32
+	elements:  value.    (16)
+
+	.  reduce 16 (src line 128)
+
+
+state 33
+	int:  MINUS int.    (22)
+
+	.  reduce 22 (src line 180)
+
+
+state 34
+	float:  MINUS float.    (24)
+
+	.  reduce 24 (src line 190)
+
+
+state 35
+	exp:  EPLUS NUMBER.    (26)
+
+	.  reduce 26 (src line 200)
+
+
+state 36
+	exp:  EMINUS NUMBER.    (27)
+
+	.  reduce 27 (src line 205)
+
+
+state 37
+	array:  LEFTBRACKET elements RIGHTBRACKET.    (15)
+
+	.  reduce 15 (src line 123)
+
+
+state 38
+	elements:  elements COMMA.value 
+
+	FLOAT  shift 25
+	NUMBER  shift 24
+	STRING  shift 13
+	LEFTBRACE  shift 3
+	LEFTBRACKET  shift 22
+	TRUE  shift 17
+	FALSE  shift 18
+	NULL  shift 19
+	MINUS  shift 23
+	.  error
+
+	float  goto 21
+	int  goto 20
+	number  goto 14
+	object  goto 15
+	value  goto 39
+	array  goto 16
+
+state 39
+	elements:  elements COMMA value.    (17)
+
+	.  reduce 17 (src line 133)
+
+
+22 terminals, 12 nonterminals
+28 grammar rules, 40/2000 states
+0 shift/reduce, 0 reduce/reduce conflicts reported
+61 working sets used
+memory: parser 31/30000
+23 extra closures
+46 shift entries, 1 exceptions
+18 goto entries
+10 entries saved by goto default
+Optimizer space used: output 53/30000
+53 table entries, 0 zero
+maximum spread: 22, maximum offset: 38

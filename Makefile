@@ -18,16 +18,16 @@ dist: bin
 
 # test runs the test suite and vets the code
 test: generate
-	go list $(TEST) | xargs -n1 go test -timeout=60s -parallel=4 $(TESTARGS)
+	go list $(TEST) | grep -v vendor | xargs -n1 go test -timeout=60s -parallel=4 $(TESTARGS)
 
 # testrace runs the race checker
 testrace: generate
-	go list $(TEST) | xargs -n1 go test -race $(TESTARGS)
+	go list $(TEST) | grep -v vendor | xargs -n1 go test -race $(TESTARGS)
 
 # generate runs `go generate` to build the dynamically generated
 # source files.
 generate:
 	find . -type f -name '.DS_Store' -delete
-	go generate ./...
+	go list $(TEST) | grep -v vendor | go generate $(TESTARGS)
 
 .PHONY: default bin dev dist test testrace generate

@@ -1,0 +1,451 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/armon/go-metrics",
+			"path": "github.com/armon/go-metrics",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/armon/go-radix",
+			"path": "github.com/armon/go-radix",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/aws",
+			"path": "github.com/aws/aws-sdk-go/aws",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/aws/awserr",
+			"path": "github.com/aws/aws-sdk-go/aws/awserr",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/aws/awsutil",
+			"path": "github.com/aws/aws-sdk-go/aws/awsutil",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/aws/client",
+			"path": "github.com/aws/aws-sdk-go/aws/client",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/aws/client/metadata",
+			"path": "github.com/aws/aws-sdk-go/aws/client/metadata",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/aws/corehandlers",
+			"path": "github.com/aws/aws-sdk-go/aws/corehandlers",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/aws/credentials",
+			"path": "github.com/aws/aws-sdk-go/aws/credentials",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/aws/credentials/ec2rolecreds",
+			"path": "github.com/aws/aws-sdk-go/aws/credentials/ec2rolecreds",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/aws/defaults",
+			"path": "github.com/aws/aws-sdk-go/aws/defaults",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/aws/ec2metadata",
+			"path": "github.com/aws/aws-sdk-go/aws/ec2metadata",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/aws/request",
+			"path": "github.com/aws/aws-sdk-go/aws/request",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/aws/session",
+			"path": "github.com/aws/aws-sdk-go/aws/session",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/private/endpoints",
+			"path": "github.com/aws/aws-sdk-go/private/endpoints",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/private/protocol",
+			"path": "github.com/aws/aws-sdk-go/private/protocol",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/private/protocol/json/jsonutil",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/json/jsonutil",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/private/protocol/jsonrpc",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/jsonrpc",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/private/protocol/query",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/query",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/private/protocol/query/queryutil",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/query/queryutil",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/private/protocol/rest",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/rest",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/private/protocol/restxml",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/restxml",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/private/protocol/xml/xmlutil",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/xml/xmlutil",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/private/signer/v4",
+			"path": "github.com/aws/aws-sdk-go/private/signer/v4",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/private/waiter",
+			"path": "github.com/aws/aws-sdk-go/private/waiter",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/service/dynamodb",
+			"path": "github.com/aws/aws-sdk-go/service/dynamodb",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/service/dynamodb/dynamodbattribute",
+			"path": "github.com/aws/aws-sdk-go/service/dynamodb/dynamodbattribute",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/aws/aws-sdk-go/service/s3",
+			"path": "github.com/aws/aws-sdk-go/service/s3",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/coreos/etcd/Godeps/_workspace/src/github.com/ugorji/go/codec",
+			"path": "github.com/coreos/etcd/Godeps/_workspace/src/github.com/ugorji/go/codec",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/coreos/etcd/Godeps/_workspace/src/golang.org/x/net/context",
+			"path": "github.com/coreos/etcd/Godeps/_workspace/src/golang.org/x/net/context",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/coreos/etcd/client",
+			"path": "github.com/coreos/etcd/client",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/coreos/etcd/pkg/pathutil",
+			"path": "github.com/coreos/etcd/pkg/pathutil",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/coreos/etcd/pkg/transport",
+			"path": "github.com/coreos/etcd/pkg/transport",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/coreos/etcd/pkg/types",
+			"path": "github.com/coreos/etcd/pkg/types",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/go-ini/ini",
+			"path": "github.com/go-ini/ini",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/go-sql-driver/mysql",
+			"path": "github.com/go-sql-driver/mysql",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/hashicorp/consul/api",
+			"path": "github.com/hashicorp/consul/api",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/hashicorp/errwrap",
+			"path": "github.com/hashicorp/errwrap",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/hashicorp/go-cleanhttp",
+			"path": "github.com/hashicorp/go-cleanhttp",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/hashicorp/go-multierror",
+			"path": "github.com/hashicorp/go-multierror",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/hashicorp/go-uuid",
+			"path": "github.com/hashicorp/go-uuid",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/hashicorp/golang-lru",
+			"path": "github.com/hashicorp/golang-lru",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/hashicorp/golang-lru/simplelru",
+			"path": "github.com/hashicorp/golang-lru/simplelru",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/hashicorp/hcl",
+			"path": "github.com/hashicorp/hcl",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/hashicorp/hcl/hcl",
+			"path": "github.com/hashicorp/hcl/hcl",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/hashicorp/hcl/json",
+			"path": "github.com/hashicorp/hcl/json",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/hashicorp/serf/coordinate",
+			"path": "github.com/hashicorp/serf/coordinate",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"path": "github.com/hashicorp/vault/audit",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"path": "github.com/hashicorp/vault/helper/mlock",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"path": "github.com/hashicorp/vault/helper/pgpkeys",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"path": "github.com/hashicorp/vault/helper/salt",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"path": "github.com/hashicorp/vault/helper/xor",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"path": "github.com/hashicorp/vault/http",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"path": "github.com/hashicorp/vault/logical",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"path": "github.com/hashicorp/vault/logical/framework",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"path": "github.com/hashicorp/vault/physical",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"path": "github.com/hashicorp/vault/shamir",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"path": "github.com/hashicorp/vault/vault",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/jmespath/go-jmespath",
+			"path": "github.com/jmespath/go-jmespath",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/lib/pq",
+			"path": "github.com/lib/pq",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/lib/pq/oid",
+			"path": "github.com/lib/pq/oid",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/mitchellh/copystructure",
+			"path": "github.com/mitchellh/copystructure",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/mitchellh/mapstructure",
+			"path": "github.com/mitchellh/mapstructure",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/mitchellh/reflectwalk",
+			"path": "github.com/mitchellh/reflectwalk",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/github.com/samuel/go-zookeeper/zk",
+			"path": "github.com/samuel/go-zookeeper/zk",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/golang.org/x/crypto/cast5",
+			"path": "golang.org/x/crypto/cast5",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/golang.org/x/crypto/curve25519",
+			"path": "golang.org/x/crypto/curve25519",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/golang.org/x/crypto/openpgp",
+			"path": "golang.org/x/crypto/openpgp",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/golang.org/x/crypto/openpgp/armor",
+			"path": "golang.org/x/crypto/openpgp/armor",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/golang.org/x/crypto/openpgp/elgamal",
+			"path": "golang.org/x/crypto/openpgp/elgamal",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/golang.org/x/crypto/openpgp/errors",
+			"path": "golang.org/x/crypto/openpgp/errors",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/golang.org/x/crypto/openpgp/packet",
+			"path": "golang.org/x/crypto/openpgp/packet",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/golang.org/x/crypto/openpgp/s2k",
+			"path": "golang.org/x/crypto/openpgp/s2k",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/golang.org/x/crypto/ssh",
+			"path": "golang.org/x/crypto/ssh",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/golang.org/x/net/context",
+			"path": "golang.org/x/net/context",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		},
+		{
+			"origin": "github.com/hashicorp/vault/vendor/golang.org/x/sys/unix",
+			"path": "golang.org/x/sys/unix",
+			"revision": "a2359d054cb77325c1e6d0ee1a6c04672445ebb6",
+			"revisionTime": "2016-02-25T15:49:12-05:00"
+		}
+	]
+}
